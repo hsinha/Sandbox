@@ -8,7 +8,7 @@ def fqdn():
         try:
             a=socket.gethostbyname(i.strip())
         except:
-            a=['Host Name not found',',',i.strip()]
+            a=['Not Found',',',i.strip()]
         print a
         fo.write(i.strip()+ ',' +a+'\n')
     fi.close()
